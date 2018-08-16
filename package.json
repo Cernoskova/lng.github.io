@@ -1,0 +1,24 @@
+{
+  "name": "longaro",
+  "version": "1.0.0",
+  "description": "we help academics, specialists to arrange the events, which we design in the details",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify index.js -o assets/js/bundle.js",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Arcila",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "list.js": "^1.5.0",
+    "materialize": "^1.0.0",
+    "materialize-css": "^0.100.2",
+    "mdi": "^2.2.43"
+  },
+  "devDependencies": {
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  }
+}

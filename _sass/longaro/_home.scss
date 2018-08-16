@@ -1,0 +1,54 @@
+#slider-home {
+  background: $secondary-color;
+  .slides {
+    background: $secondary-color;
+    img {
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      opacity: 0.55;
+      filter: grayscale(100%);
+    }
+  }
+
+  .indicators {
+    background-color: $secondary-color;
+    .active {
+      background-color: $longaro-blue;
+    }
+  }
+}
+
+#home-panes {
+
+  #home-about-us {
+    .world {
+      background-image: url('images/home/mapa_velka_EN.png');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 115%;
+      height: 35em;
+    }
+
+    .row {
+      margin: 0;
+
+      .leyend {
+        margin: 1em 0em;
+        padding: 0 3em;
+      }
+    }
+  }
+
+  .section {
+    padding: 4em 0;
+  }
+
+  .icon-block {
+    padding: 1em 1em;
+    .icon {
+      img {
+        max-width: 8em;
+      }
+    }
+  }
+}

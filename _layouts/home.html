@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body>
+  <div class="navbar-fixed">
+      <nav role="navigation" class="z-depth-3">
+          <div class="nav-wrapper container">
+              <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">
+                  <img src="{{ site.baseurl }}/assets/images/logos/logo_bila.png" alt="brand-logo">
+              </a>
+          {% assign default_paths = site.mainpages | map: "path" %}
+          {% assign page_paths = site.header_pages | default: default_paths %}
+      
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="{{ "/" | relative_url }}">Home </a></li>
+                  <li><a href="#home-about-us">About us </a></li>
+                  <li><a href="#home-services">Services </a></li>
+                </ul>
+      
+                <ul id="nav-mobile" class="side-nav">
+                  <li><a href="#">Home</a></li>
+                                  {% if page_paths %}
+                      {% for path in page_paths %}
+                          {% assign my_page = site.mainpages | where: "path", path | first %}
+                          {% if my_page.title %}
+                          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+                          {% endif %}
+                      {% endfor %}
+                  {% endif %} 
+                </ul>        
+      
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+      </nav>
+  </div>  
+  <main>
+    <div class="no-pad-bot" id="index-banner">
+      <div class="container-flow">
+        <div id="slider-home" class="slider">
+          <ul class="slides">
+            <li>
+              <img src="{{baseurl}}/assets/images/slider/organising.jpg">
+              <div class="caption left-align">
+                <h3>Organising</h3>
+                <h5 class="light grey-text text-lighten-3">successful poster sessions and producing book of abstracts.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="{{baseurl}}/assets/images/slider/finding.jpg">
+              <div class="caption left-align">
+                <h3>Finding</h3>
+                <h5 class="light grey-text text-lighten-3">the best venue suitable for your event.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="{{baseurl}}/assets/images/slider/planning.jpg">
+              <div class="caption left-align">
+                <h3>Planning</h3>
+                <h5 class="light grey-text text-lighten-3">budget forecasting and cash-flow management from the very beginning.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-flow black" id="home-panes">
+  
+      <div id="home-about-us" class="container-flow">
+        <div class="row white-text valign-wrapper">
+          <div class="col s12 m6 leyend">
+            <h3>About us</h3>
+            <p>
+                We let you focus on the programme and list of speakers, and we take care of the rest.
+                You will have full control over all aspects of the conference, but without worrying about the little and not so little details that come with scientific events.
+            </p>
+            <a class="waves-effect waves-light btn maximum-blue-green" href="aboutus">Learn more</a>
+          </div>
+          <div class="col s12 m6 world"></div>
+        </div>
+      </div>
+  
+      <div class="container-flow white">
+        <div class="container">
+          <div class="section center-align">
+            <h3>Focus on research and development</h3>
+            <h5>We are not interested in business meetings or birthdays parties. We organise high-level scientific events, such
+              as conferences, workshops, seminars, hackathons or colloquia. Our clients are:</h5>
+            <!--   Icon Section   -->
+            <div class="row">
+              <div class="col s12 m4">
+                <div class="icon-block center-align">
+                  <div class="icon">
+                    <img src="{{ "/assets/images/home/finance-4x.png" | relative_url }}" alt="">
+                  </div>
+                  <h5 class="center">Senior researchers (PIs or Group Leaders) who organise conferences for research projects</h5>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <div class="icon-block center-align">
+                  <div class="icon">
+                    <img src="{{ "/assets/images/home/poradatelstvi-4x.png" | relative_url }}" alt="">
+                  </div>
+                  <h5 class="center">Institutions applying for hosting large international conferences</h5>
+                </div>
+              </div>
+              <div class="col s12 m4">
+                <div class="icon-block center-align">
+                  <div class="icon">
+                    <img src="{{ "/assets/images/home/napad-4x.png" | relative_url }}" alt="">
+                  </div>
+                  <h5 class="center">Researchers with an idea for a new event but with limited funding</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="home-services" class="container-flow black">
+        <div class="container">
+          <div class="section center-align  white-text">
+            <h3>Absolute satisfaction of your event participants</h3>
+            <h5>All our events are organised to the last detail taking special care on our clients needs and the event participants
+              satisfaction.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  {% include footer.html %}
+      
+  {% include script.html %}  
+</body>
+
+</html>
