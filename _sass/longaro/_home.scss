@@ -22,11 +22,12 @@
 
   #home-about-us {
     .world {
+      min-width: 350px;
       background-image: url('images/home/mapa_velka_EN.png');
       background-repeat: no-repeat;
-      background-position: top left;
-      background-size: 115%;
-      height: 35em;
+      background-position: center center;
+      background-size: contain;
+      height: 45em;
     }
 
     .row {
