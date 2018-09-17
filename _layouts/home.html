@@ -5,38 +5,38 @@
 
 <body>
   <div class="navbar-fixed">
-      <nav role="navigation" class="z-depth-3">
-          <div class="nav-wrapper container">
-              <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">
-                  <img src="{{ site.baseurl }}/assets/images/logos/logo_bila.png" alt="brand-logo">
-              </a>
-          {% assign default_paths = site.mainpages | map: "path" %}
-          {% assign page_paths = site.header_pages | default: default_paths %}
-      
-                <ul class="right hide-on-med-and-down">
-                  <li><a href="{{ "/" | relative_url }}">Home </a></li>
-                  <li><a href="#home-about-us">About us </a></li>
-                  <li><a href="#home-services">Services </a></li>
-                  <li><a href="/contact/">Contact Us</a></li>
-                </ul>
-      
-                <ul id="nav-mobile" class="side-nav">
-                  <li><a href="#">Home</a></li>
-                                  {% if page_paths %}
-                      {% for path in page_paths %}
-                          {% assign my_page = site.mainpages | where: "path", path | first %}
-                          {% if my_page.title %}
-                          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                          {% endif %}
-                      {% endfor %}
-                  {% endif %}
-                  <li><a href="/contact/">Contact Us</a></li> 
-                </ul>        
-      
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-          </div>
-      </nav>
-  </div>  
+    <nav role="navigation" class="z-depth-3">
+      <div class="nav-wrapper container">
+        <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">
+          <img src="{{ site.baseurl }}/assets/images/logos/logo_bila.png" alt="brand-logo">
+        </a>
+        {% assign default_paths = site.mainpages | map: "path" %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="{{ "/" | relative_url }}">Home </a></li>
+          <li><a href="#home-about-us">About us </a></li>
+          <li><a href="#home-services">Services </a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Home</a></li>
+          {% if page_paths %}
+          {% for path in page_paths %}
+          {% assign my_page = site.mainpages | where: "path", path | first %}
+          {% if my_page.title %}
+          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
   <main>
     <div class="no-pad-bot" id="index-banner">
       <div class="container-flow">
@@ -51,7 +51,7 @@
             <li>
               <img src="{{baseurl}}/assets/images/slider/slide2.jpg">
               <div class="caption left-align">
-                <h3>Event Management  for different sizes and kinds of events across Europe</h3>
+                <h3>Event Management for different sizes and kinds of events across Europe</h3>
                 <h5 class="light grey-text text-lighten-3">PR & Marketing for researchers.</h5>
               </div>
             </li>
@@ -67,17 +67,18 @@
       </div>
     </div>
     <div class="container-flow black" id="home-panes">
-  
+
       <div id="home-about-us" class="container-flow">
         <div class="row white-text">
           <div class="col s12 m6 ">
             <div class="valign-wrapper" style="height: 25em;">
               <div class="leyend">
                 <h3>About us</h3>
-                <p>
-                    We let you focus on the programme and list of speakers, and we take care of the rest.
-                    You will have full control over all aspects of the conference, but without worrying about the little and not so little details that come with scientific events.
-                </p>
+                <h5>
+                  We let you focus on the programme and list of speakers, and we take care of the rest.
+                  You will have full control over all aspects of the conference, but without worrying about the little
+                  and not so little details that come with scientific events.
+                </h5>
                 <a class="waves-effect waves-light btn maximum-blue-green" href="aboutus">Learn more</a>
               </div>
             </div>
@@ -87,12 +88,13 @@
           </div>
         </div>
       </div>
-  
+
       <div class="container-flow white">
         <div class="container">
           <div class="section center-align">
             <h3>Focus on research and development</h3>
-            <h5>We are not interested in business meetings or birthdays parties. We organise high-level scientific events, such
+            <h5>We are not interested in business meetings or birthdays parties. We organise high-level scientific
+              events, such
               as conferences, workshops, seminars, hackathons or colloquia. Our clients are:</h5>
             <!--   Icon Section   -->
             <div class="row">
@@ -101,7 +103,8 @@
                   <div class="icon">
                     <img src="{{ "/assets/images/home/finance-4x.png" | relative_url }}" alt="">
                   </div>
-                  <h5 class="center">Senior researchers (PIs or Group Leaders) who organise conferences for research projects</h5>
+                  <h5 class="center">Senior researchers (PIs or Group Leaders) who organise conferences for research
+                    projects</h5>
                 </div>
               </div>
               <div class="col s12 m4">
@@ -124,18 +127,88 @@
           </div>
         </div>
       </div>
-  
+
       <div id="home-services" class="container-flow black">
         <div class="container">
           <div class="section center-align  white-text">
             <h3>Absolute satisfaction of your event participants</h3>
-            <h5>All our events are organised to the last detail taking special care on our clients needs and the event participants
+            <h5>All our events are organised to the last detail taking special care on our clients needs and the event
+              participants
               satisfaction.</h5>
           </div>
         </div>
       </div>
-    </div>
 
+      <div id="home-what-we-do" class="container-flow white">
+        <div class="container">
+          <div class="section center-align">
+            <h3><strong>WHAT WE</strong> DO</h3>
+            <div class="left-align">
+              <ul>
+                <li>
+                  <div class="list-item">
+                    <div class="list-triangle"></div>
+                    <div class="list-text">
+                      Event management across Europe
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="list-triangle"></div>
+                    <div class="list-text">
+                      Communications / Marketing / PR
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="list-triangle"></div>
+                    <div class="list-text">
+                      Printed and online materials (Book of abstracts, posters, newsletters)
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="list-triangle"></div>
+                    <div class="list-text">
+                      Website with scientific content
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="list-triangle"></div>
+                    <div class="list-text">
+                      Graphic design
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="list-triangle"></div>
+                    <div class="list-text">
+                      Mobile applications for conferences and workshops
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-item">
+                    <div class="list-triangle"></div>
+                    <div class="list-text">
+                      Audio and video streaming
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <h5>Knowledge of EU grants guaranteed</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div class="container-flow">
       <div id="contact-section">
         {% include contact.html %}
@@ -144,8 +217,8 @@
   </main>
 
   {% include footer.html %}
-      
-  {% include script.html %}  
+
+  {% include script.html %}
 </body>
 
 </html>
