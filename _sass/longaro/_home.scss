@@ -57,33 +57,17 @@
     }
   }
 
+  #home-services {
+    .col.m6 > .btn {
+      width: 100%;
+    }
+  }
+
   #home-what-we-do {
 
     strong {
       color: $longaro-blue;
     }
 
-  }
-
-  .list-item {
-    margin: 0.5em 0;
-
-    .list-triangle {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-bottom: 20px solid $longaro-blue;
-      border-left: 20px solid transparent;
-    }
-
-    .list-text {
-      margin: 0 1em;
-      font-family: "Product sans", "Roboto", sans-serif;
-      -webkit-font-smoothing: antialiased;
-      display: inline-block;
-      font-size: 1.64rem;
-      line-height: 110%;
-      margin: .82rem 0 .656rem 1em;
-    }
   }
 }
