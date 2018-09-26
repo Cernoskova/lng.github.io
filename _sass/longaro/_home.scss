@@ -7,7 +7,7 @@
     img {
       // -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
-      opacity: 0.55;
+      opacity: 0.45;
       // filter: grayscale(100%);
     }
   }
@@ -21,7 +21,14 @@
   }
 }
 
-#home-panes {
+#landing-page {
+
+  .body-text {
+    margin: 0 0 1em 0;
+    font-size: $h5-fontsize;
+    font-weight: normal;
+    line-height: 1.1;    
+  }
 
   #home-about-us {
     .world {

@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 // Color Matcher https://coolors.co/2cbdb3-ffffff-191308-322a26-000000
 
 $longaro-blue: #2cbdb3;
@@ -19,18 +18,9 @@ base: (bg: #000, fg: #fff, primary: #333, secondary: #666, tertiary: #888,
 "longaro/mixins",
 "longaro/contact",
 "longaro/home",
+"longaro/services",
 "longaro/header",
 "longaro/footer";
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Product sans", "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
 
 .icon-block {
   padding: 0 15px;
@@ -48,7 +38,7 @@ h6 {
 }
 
 h1.page-title {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 3em;
   text-align: center;
   color: $longaro-blue;
@@ -113,22 +103,20 @@ p.rss-subscribe {
     display: inline-block;
     width: 0;
     height: 0;
-    border-bottom: 20px solid $longaro-blue;
-    border-left: 20px solid transparent;
+    border-bottom: 15px solid $longaro-blue;
+    border-left: 15px solid transparent;
   }
 
   .list-text {
     margin: 0 1em;
-    font-family: "Product sans", "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
     display: inline-block;
-    font-size: 1.64rem;
+    font-size: 1.40rem;
     line-height: 110%;
     margin: .82rem 0 .656rem 1em;
   }
 
   .list-subtext {
-    font-size: 1.40rem;
+    font-size: 1.10rem;
     color: $longaro-blue;
   }
 }
