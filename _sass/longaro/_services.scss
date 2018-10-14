@@ -1,5 +1,25 @@
 #services {
-    .highlight {
-        color: $longaro-blue;
+  .highlight {
+    color: $longaro-blue;
+  }
+
+  .section {
+    padding: 0 0 1em 0;
+  }
+
+  .icon-block {
+    padding: 1em 1em;
+
+    .icon {
+      img {
+        max-width: 8em;
+      }
     }
+  }
+
+  #home-services {
+    .col.m6>.btn {
+      width: 100%;
+    }
+  }
 }
