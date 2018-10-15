@@ -6,6 +6,6 @@ import "materialize-css";
 
     $('.button-collapse').sideNav();
     $('.carousel').carousel();
-    $('#slider-home').slider();
+    $('#slider-home').slider({height:window.innerHeight});
   }); // end of document ready
 })($); // end of jQuery name space
