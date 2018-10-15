@@ -13,7 +13,7 @@
         {% assign default_paths = site.mainpages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
 
-        <ul class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down grey-text text-darken-3">
           <li><a href="{{ "/" | relative_url }}">Home </a></li>
           <li><a href="#home-about-us">About us </a></li>
           <li><a href="#home-what-we-do">Services </a></li>
@@ -21,7 +21,7 @@
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Home</a></li>
+          <li><a href="/">Home</a></li>
           {% if page_paths %}
           {% for path in page_paths %}
           {% assign my_page = site.mainpages | where: "path", path | first %}
@@ -67,29 +67,10 @@
       </div>
     </div>
 
-    <div class="container-flow black">
-      <div id="home-about-us" class="container-flow white-text">
-        <div class="row">
-          <div class="col s12 m6 ">
-            <div class="valign-wrapper" style="height: 25em;">
-              <div class="leyend">
-                <h4>ABOUT US</h4>
-                <div class="body-text">
-                  We let you focus on the programme and list of speakers, and we take care of the rest.
-                  You will have full control over all aspects of the conference, but without worrying about the little
-                  and not so little details that come with scientific events.
-                </div>
-                <a class="waves-effect waves-light btn maximum-blue-green" href="aboutus">Learn more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col m6 s12">
-            <div class="world"></div>
-          </div>
-        </div>
-      </div>
-      <div class="container-flow black">
-        <div class="container white-text">
+    <div class="container-flow grey darken-4">
+      
+      <div class="container-flow grey lighten-3">
+        <div class="container grey-text text-darken-3">
           <div class="section center-align">
             <h4>FOCUS ON RESEARCH AND DEVELOPMENT</h4>
             <div class="body-text">We are not interested in business meetings or birthdays parties. We organise high-level scientific
@@ -125,87 +106,116 @@
             </div>
             <div class="row">
               <div class="col m6">
-                <a class="waves-effect waves-light btn maximum-blue-green" href="services">More  <i class="mdi mdi-information-variant mdi-16px"></i></a>
+                <a class="waves-effect waves-light btn maximum-blue-green grey-text text-lighten-3" href="services">More  <i class="mdi mdi-information-variant mdi-16px"></i></a>
               </div>
               <div class="col m6">
-                <a class="waves-effect waves-light btn maximum-blue-green" target="_blank" href="https://issuu.com/longaro/docs/210x210_brozura_longaro_new_en_web">Brochure  <i class="mdi mdi-book-open-page-variant mdi-16px"></i></a>
+                <a class="waves-effect waves-light btn maximum-blue-green grey-text text-lighten-3" target="_blank" href="https://issuu.com/longaro/docs/210x210_brozura_longaro_new_en_web">Brochure  <i class="mdi mdi-book-open-page-variant mdi-16px"></i></a>
               </div>
             </div>            
           </div>
         </div>
       </div>
-      <div id="home-what-we-do" class="container-flow black">
-        <div class="container">
-          <div class="section center-align white-text">
-            <h4>CONSULTANCY & PACKAGES</h4>
-            <div class="left-align list">
-              <ul>
-                <li>
-                  <div class="list-item">
-                    <div class="list-triangle"></div>
-                    <div class="list-text">
-                      Event management across Europe
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="list-item">
-                    <div class="list-triangle"></div>
-                    <div class="list-text">
-                      Communications / Marketing / PR
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="list-item">
-                    <div class="list-triangle"></div>
-                    <div class="list-text">
-                      Printed and online materials (Book of abstracts, posters, newsletters)
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="list-item">
-                    <div class="list-triangle"></div>
-                    <div class="list-text">
-                      Website with scientific content
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="list-item">
-                    <div class="list-triangle"></div>
-                    <div class="list-text">
-                      Graphic design
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="list-item">
-                    <div class="list-triangle"></div>
-                    <div class="list-text">
-                      Mobile applications for conferences and workshops
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="list-item">
-                    <div class="list-triangle"></div>
-                    <div class="list-text">
-                      Audio and video streaming
-                    </div>
-                  </div>
-                </li>
-              </ul>
+
+      <div id="home-about-us" class="container-flow grey-text text-lighten-3">
+        <div class="row">
+          <div class="col s12 m6 ">
+            <div class="valign-wrapper" style="height: 34rem;">
+              <div class="leyend">
+                <h4>ABOUT US</h4>
+                <div class="body-text">
+                  We let you focus on the programme and list of speakers, and we take care of the rest.
+                  You will have full control over all aspects of the conference, but without worrying about the little
+                  and not so little details that come with scientific events.
+                </div>
+                <a class="waves-effect waves-light btn maximum-blue-green center-align grey-text text-lighten-3" href="aboutus">Learn more</a>
+              </div>
             </div>
-            <h5>Knowledge of EU grants guaranteed</h5>
+          </div>
+          <div class="col m6 s12">
+            <div class="world"></div>
           </div>
         </div>
+      </div>
+
+      <div id="home-what-we-do" class="container-flow grey lighten-3">
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="section center-align grey-text text-darken-3">
+              <h4>CONSULTANCY & PACKAGES</h4>
+              <div class="left-align list">
+                <ul>
+                  <li>
+                    <div class="list-item">
+                      <div class="list-triangle"></div>
+                      <div class="list-text">
+                        Event management across Europe
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <div class="list-triangle"></div>
+                      <div class="list-text">
+                        Communications / Marketing / PR
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <div class="list-triangle"></div>
+                      <div class="list-text">
+                        Printed and online materials (Book of abstracts, posters, newsletters)
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <div class="list-triangle"></div>
+                      <div class="list-text">
+                        Website with scientific content
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <div class="list-triangle"></div>
+                      <div class="list-text">
+                        Graphic design
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <div class="list-triangle"></div>
+                      <div class="list-text">
+                        Mobile applications for conferences and workshops
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-item">
+                      <div class="list-triangle"></div>
+                      <div class="list-text">
+                        Audio and video streaming
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a class="waves-effect waves-light btn maximum-blue-green grey-text text-lighten-3 " target="_blank" href="/assets/files/packages.pdf">Packages  <i class="mdi mdi-book-open-page-variant mdi-16px"></i></a>
+              <h5>Knowledge of EU grants guaranteed</h5>
+            </div>
+          </div>
+          <!-- <div class="col s12 m2">
+            <div class="light-bulb"></div>
+          </div> -->
+        </div>
+        
       </div>
   
     </div>
 
-    <div class="container-flow">
+    <div class="container-flow grey-text text-darken-3">
       <div id="contact-section">
         {% include contact.html %}
       </div>

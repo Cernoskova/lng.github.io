@@ -7,7 +7,7 @@
     img {
       // -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
-      opacity: 0.45;
+      opacity: 0.65;
       // filter: grayscale(100%);
     }
   }
@@ -26,17 +26,17 @@
   .body-text {
     margin: 0 0 1em 0;
     font-size: $h5-fontsize;
-    font-weight: normal;   
+    font-weight: normal;
   }
 
   #home-about-us {
     .world {
       min-width: 350px;
-      background-image: url('images/home/bright-bulb.jpg');
+      background-image: url('images/home/mapa_final_velka.png');
       background-repeat: no-repeat;
-      background-position: top left;
+      background-position: center left;
       background-size: 115%;
-      height: 25em;
+      height: 34rem;
     }
 
     .row {
@@ -70,12 +70,23 @@
   }
 
   #home-what-we-do {
+    .row {
+      margin: 0;
+      padding: 0 5em;
+    }
     .list {
       margin: 1.5em 0;
     }
     strong {
       color: $longaro-blue;
     }
-
+    .light-bulb {
+      min-width: 350px;
+      background-image: url('images/home/zarovka_zelena.jpg');
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: 115%;
+      height: 40em;
+    }
   }
 }

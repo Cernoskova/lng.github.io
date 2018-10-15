@@ -40,7 +40,7 @@ $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
 // $secondary-color: color("teal", "lighten-1") !default;
-$secondary-color: color("shades", "black") !default;
+$secondary-color: color("grey", "darken-4") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("maximum-blue-green", "darken-1") !default;
