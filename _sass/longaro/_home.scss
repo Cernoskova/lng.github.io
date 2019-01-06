@@ -1,8 +1,12 @@
 #slider-home {
-  background: $secondary-color;
+  background: $scientifika-blue;
+
+  .title {
+    color: $link-color;
+  }
 
   .slides {
-    background: $secondary-color;
+    background: $scientifika-blue;
 
     img {
       // -webkit-filter: grayscale(100%);
@@ -13,10 +17,10 @@
   }
 
   .indicators {
-    background-color: $secondary-color;
+    background-color: $scientifika-blue;
 
     .active {
-      background-color: $scientifika-blue;
+      background-color: $link-color;
     }
   }
 }
