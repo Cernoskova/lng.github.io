@@ -42,7 +42,7 @@ h1.page-title {
   font-weight: 400;
   font-size: 3em;
   text-align: center;
-  color: $scientifika-blue;
+  color: $scientifika-light-blue;
 }
 
 .col.grid-example {
@@ -104,7 +104,7 @@ p.rss-subscribe {
     display: inline-block;
     width: 0;
     height: 0;
-    border-bottom: 15px solid $scientifika-blue;
+    border-bottom: 15px solid $link-color;
     border-left: 15px solid transparent;
   }
 
