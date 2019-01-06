@@ -2,13 +2,13 @@
 
 // Color Matcher https://coolors.co/2cbdb3-ffffff-191308-322a26-000000
 
-$longaro-blue: #2cbdb3;
-$registration-black: #000000;
+$scientifika-blue: #001731;
+$scientifika-light-blue: #00acec;
 $bistre: #322A26;
 $licorice: #191308;
 $white: #fff;
 
-$palettes: (light: (bg: $registration-black, fg: $white, primary: $longaro-blue, secondary: $bistre, tertiary: $licorice,
+$palettes: (light: (bg: $scientifika-light-blue, fg: $white, primary: $scientifika-blue, secondary: $bistre, tertiary: $licorice,
 ),
 base: (bg: #000, fg: #fff, primary: #333, secondary: #666, tertiary: #888,
 ),
@@ -32,7 +32,7 @@ base: (bg: #000, fg: #fff, primary: #333, secondary: #666, tertiary: #888,
 }
 
 .shadow-demo {
-  background-color: $longaro-blue;
+  background-color: $scientifika-blue;
   width: 100px;
   height: 100px;
   margin: 20px auto;
@@ -42,7 +42,7 @@ h1.page-title {
   font-weight: 400;
   font-size: 3em;
   text-align: center;
-  color: $longaro-blue;
+  color: $scientifika-blue;
 }
 
 .col.grid-example {
@@ -83,7 +83,7 @@ h1.page-title {
 }
 
 .post-header h1.post-title {
-  color: $longaro-blue;
+  color: $scientifika-blue;
   font-size: 2.8em;
   font-weight: 800;
 }
@@ -104,7 +104,7 @@ p.rss-subscribe {
     display: inline-block;
     width: 0;
     height: 0;
-    border-bottom: 15px solid $longaro-blue;
+    border-bottom: 15px solid $scientifika-blue;
     border-left: 15px solid transparent;
   }
 
@@ -117,7 +117,7 @@ p.rss-subscribe {
 
   .list-subtext {
     font-size: 1.10rem;
-    color: $longaro-blue;
+    color: $scientifika-blue;
   }
 }
 

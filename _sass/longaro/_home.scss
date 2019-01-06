@@ -16,12 +16,16 @@
     background-color: $secondary-color;
 
     .active {
-      background-color: $longaro-blue;
+      background-color: $scientifika-blue;
     }
   }
 }
 
 #landing-page {
+
+  .section-title {
+    color: $scientifika-light-blue;
+  }
 
   .body-text {
     margin: 0 0 1em 0;
@@ -78,7 +82,7 @@
       margin: 1.5em 0;
     }
     strong {
-      color: $longaro-blue;
+      color: $scientifika-blue;
     }
     .light-bulb {
       min-width: 350px;
