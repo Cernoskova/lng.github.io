@@ -9,6 +9,8 @@ github_username:  macrod68
 
 baseurl: ""
 
+google_analytics: 'UA-132832693-1'
+
 collections:
   pages:
     output: true
