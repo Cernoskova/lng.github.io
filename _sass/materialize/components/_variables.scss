@@ -44,6 +44,7 @@ $secondary-color: color("maximum-blue-green", "bg") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("maximum-blue-green", "contrast") !default;
+$highlight-color: color("maximum-blue-green", "hl") !default;
 
 // 2. Badges
 // ==========================================================================
@@ -57,7 +58,7 @@ $badge-height: 22px !default;
 
 // Shared styles
 $button-border: none !default;
-$button-background-focus: lighten($secondary-color, 4%) !default;
+$button-background-focus: lighten($link-color, 4%) !default;
 $button-font-size: 1rem !default;
 $button-icon-font-size: 1.3rem !default;
 $button-height: 36px !default;
@@ -69,9 +70,9 @@ $button-disabled-background: #DFDFDF !default;
 $button-disabled-color: #9F9F9F !default;
 
 // Raised buttons
-$button-raised-background: $secondary-color !default;
-$button-raised-background-hover: lighten($button-raised-background, 5%) !default;
-$button-raised-color: #fff !default;
+$button-raised-background: $highlight-color !default;
+$button-raised-background-hover: lighten($link-color, 5%) !default;
+$button-raised-color: $secondary-color !default;
 
 // Large buttons
 $button-large-icon-font-size: 1.6rem !default;
@@ -82,7 +83,7 @@ $button-flat-color: #343434 !default;
 $button-flat-disabled-color: lighten(#999, 10%) !default;
 
 // Floating buttons
-$button-floating-background: $secondary-color !default;
+$button-floating-background: $highlight-color !default;
 $button-floating-background-hover: $button-floating-background !default;
 $button-floating-color: #fff !default;
 $button-floating-size: 40px !default;
@@ -242,7 +243,7 @@ $navbar-height: 100px !default;
 $navbar-line-height: $navbar-height !default;
 $navbar-height-mobile: 56px !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
-$navbar-font-size: 1.2rem !default;
+$navbar-font-size: 1.1rem !default;
 $navbar-font-color: #fff !default;
 $navbar-brand-font-size: 2.1rem !default;
 

@@ -21,6 +21,9 @@ nav {
   line-height: $navbar-line-height-mobile;
 
   a { color: $navbar-font-color; }
+  a:hover {
+    color: $link-color;
+  }
 
   i,
   [class^="mdi-"], [class*="mdi-"],
