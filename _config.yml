@@ -18,6 +18,9 @@ collections:
   mainpages:
     output: true
     permalink: /:path
+  events:
+    output: true
+    permalink: /:path    
 
 exclude:
   - Gemfile
@@ -30,4 +33,4 @@ exclude:
   - index.js
 
 sass:
-    style: compressed    
+    style: compressed

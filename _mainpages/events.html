@@ -1,0 +1,75 @@
+---
+layout: page
+title: Past and upcoming events
+permalink: /events/
+---
+
+<div id="events-page" class="container-flow">
+  <h1 class="page-title">{{ page.title | escape }}</h1>
+  {% assign currentDate = site.time | date: '%F' %}  
+  <div class="container">
+
+    <h4>
+      Upcoming events
+    </h4>      
+    <div class="section center-align">
+      <div class="row">
+        {% assign sorted_events = site.events | sort: 'start_date' %}
+        {% for event in sorted_events %}
+        {% assign eventDate = event.start_date | date: '%F' %}
+        {% if eventDate >= currentDate %}
+        <div class="col s6">
+          <div class="card sticky-action hoverable">
+            <div class="card-image">
+              <img src="/assets/images/events/{{event.photo-path}}">
+              <span class="card-title">{{event.title}}</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{event.dates}}<i class="material-icons right">more_vert</i></span>
+              <p><strong>Location:</strong> {{event.country}} - {{event.city}}</p>
+              <p><strong>People:</strong> {{event.people}}</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
+              {{event.description}}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}              
+      </div>
+    </div>
+
+    <h4>
+      Past events
+    </h4>
+    <div class="section center-align">
+      <div class="row">
+        {% assign sorted_events = site.events | sort: 'start_date' %}
+        {% for event in sorted_events %}
+        {% assign eventDate = event.start_date | date: '%F' %}
+        {% if eventDate <= currentDate %}
+        <div class="col s4">
+          <div class="card sticky-action hoverable">
+            <div class="card-image">
+              <img src="/assets/images/events/{{event.photo-path}}">
+              <span class="card-title">{{event.title}}</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{event.dates}}<i class="material-icons right">more_vert</i></span>
+              <p><strong>Location:</strong> {{event.country}} - {{event.city}}</p>
+              <p><strong>People:</strong> {{event.people}}</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
+              {{event.description}}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>  
+    </div>
+
+  </div>
+</div>
