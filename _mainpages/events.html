@@ -18,8 +18,8 @@ permalink: /events/
         {% for event in sorted_events %}
         {% assign eventDate = event.start_date | date: '%F' %}
         {% if eventDate >= currentDate %}
-        <div class="col s6">
-          <div class="card sticky-action hoverable">
+        <div class="col s12 m6 l4">
+          <div class="card sticky-action medium hoverable">
             <div class="card-image">
               <img src="/assets/images/events/{{event.photo-path}}">
               <span class="card-title">{{event.title}}</span>
@@ -43,14 +43,14 @@ permalink: /events/
     <h4>
       Past events
     </h4>
-    <div class="section center-align">
+    <div class="section center-align past-events">
       <div class="row">
         {% assign sorted_events = site.events | sort: 'start_date' %}
         {% for event in sorted_events %}
         {% assign eventDate = event.start_date | date: '%F' %}
         {% if eventDate <= currentDate %}
-        <div class="col s4">
-          <div class="card sticky-action hoverable">
+        <div class="col s12 m6 l4">
+          <div class="card sticky-action medium hoverable">
             <div class="card-image">
               <img src="/assets/images/events/{{event.photo-path}}">
               <span class="card-title">{{event.title}}</span>

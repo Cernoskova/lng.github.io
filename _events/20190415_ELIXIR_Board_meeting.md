@@ -9,6 +9,7 @@ country: Norway
 city: Bergen
 people: 60
 meeting-url: 
-photo-path: 20190305_SME_Human.jpg
+photo-path: 20190415_ELIXIR_Board_meeting.jpeg
+
 ---
 

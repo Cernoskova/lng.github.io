@@ -9,6 +9,6 @@ country: Netherlands
 city: Utrecht
 people: 100
 meeting-url: 
-photo-path: 20190305_SME_Human.jpg
+photo-path: 20190305_SME_Human.jpeg
 ---
 

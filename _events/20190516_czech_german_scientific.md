@@ -9,6 +9,6 @@ country: Czech Republic
 city: Brno
 people: 130
 meeting-url: 
-photo-path: 20190305_SME_Human.jpg
+photo-path: 20190516_czech_german_scientific.jpeg
 ---
 

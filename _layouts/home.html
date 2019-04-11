@@ -223,9 +223,24 @@
         </div>
         
       </div>
-  
-    </div>
 
+      <div class="container-flow">
+        {% assign testimonials = site.testimonials %}
+        <div class="testimonials-carousel">
+          {% for testimonial in testimonials %}
+          <div class="carousel-cell">
+            <div class="testimonial maximum-blue-green-text text-bg">
+              <span class="quote-open"><i class="mdi mdi-format-quote-open mdi-36px"></i></span>
+              <span class="testimonial-quote">{{testimonial.testimony}}</span>
+              <span class="quote-close"><i class="mdi mdi-format-quote-close mdi-36px"></i></span>
+              <span class="testimonial-author">{{testimonial.person}}, {{testimonial.title}}</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>      
+    </div>
+    
     <div class="container-flow maximum-blue-green-text text-bg">
       <div id="contact-section">
         {% include contact.html %}

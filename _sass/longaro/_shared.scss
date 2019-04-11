@@ -1,0 +1,45 @@
+.testimonials-carousel {
+  margin: 0 2em;
+  padding-bottom: 1em;
+  .carousel-cell {
+    margin: 1em 2em;
+    width: 100%;
+
+    .testimonial {
+      text-align: center;
+      padding: 0 5em;
+      position: relative;
+
+      .quote-open {
+        position: absolute;
+        left: 2em;
+        top: 0;
+      }
+
+      .quote-close {
+        position: absolute;
+        right: 2em;
+        bottom: 1em;
+      }
+    }
+
+    .testimonial-quote {
+      display: block;
+      font-weight: normal;
+      padding: 1em 0;
+    }
+
+    .testimonial-author {
+      display: block;
+      font-weight: bold;
+      color: $highlight-color;
+    }
+  }
+  .flickity-page-dots {
+    bottom: 0;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background: $link-color;
+  }  
+}

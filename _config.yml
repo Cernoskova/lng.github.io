@@ -20,7 +20,10 @@ collections:
     permalink: /:path
   events:
     output: true
-    permalink: /:path    
+    permalink: /:path
+  testimonials:
+    output: true
+    permalink: /:path
 
 exclude:
   - Gemfile

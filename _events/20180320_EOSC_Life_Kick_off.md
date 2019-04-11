@@ -9,6 +9,6 @@ country: Netherlands
 city: Amsterdam
 people: 130
 meeting-url: 
-photo-path: 20190305_SME_Human.jpg
+photo-path: 20180320_EOSC_Life_Kick_off.jpeg
 ---
 

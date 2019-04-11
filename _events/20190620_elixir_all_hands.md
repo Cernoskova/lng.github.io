@@ -9,6 +9,6 @@ country: Portugal
 city: Lisbon
 people: 320
 meeting-url: 
-photo-path: 20190305_SME_Human.jpg
+photo-path: 20190620_elixir_all_hands.jpeg
 ---
 

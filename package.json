@@ -4,7 +4,6 @@
   "description": "we help academics, specialists to arrange the events, which we design in the details",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify index.js -o assets/js/bundle.js",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +17,7 @@
     "mdi": "^2.2.43"
   },
   "devDependencies": {
+    "watchify": "^3.11.1",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8"
   }
