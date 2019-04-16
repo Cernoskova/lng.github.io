@@ -26,12 +26,25 @@ permalink: /events/
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">{{event.dates}}<i class="material-icons right">more_vert</i></span>
-              <p><strong>Location:</strong> {{event.country}} - {{event.city}}</p>
-              <p><strong>People:</strong> {{event.people}}</p>
+              <p>{{event.country}} - {{event.city}}</p>
             </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
-              {{event.description}}
+            <div class="card-reveal left-align">
+              <span class="card-title grey-text text-darken-4">Details<i class="material-icons right">close</i></span>
+              <div class="detail-property">
+                <strong>Venue</strong> {{event.event_details.venue}}
+              </div>
+              <div class="divider"></div>
+              <div class="detail-property">
+                <strong>Type</strong> {{event.event_details.type}}
+              </div>
+              <div class="divider"></div>
+              <div class="detail-property">
+                <strong>Attendees</strong> {{event.event_details.attendees}}
+              </div>
+              <div class="divider"></div>
+              <div class="detail-property">
+                {{event.event_details.description}}</br>
+              </div>
             </div>
           </div>
         </div>
@@ -57,12 +70,25 @@ permalink: /events/
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">{{event.dates}}<i class="material-icons right">more_vert</i></span>
-              <p><strong>Location:</strong> {{event.country}} - {{event.city}}</p>
-              <p><strong>People:</strong> {{event.people}}</p>
+              <p>{{event.country}} - {{event.city}}</p>
             </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
-              {{event.description}}
+            <div class="card-reveal left-align">
+              <span class="card-title grey-text text-darken-4">Details<i class="material-icons right">close</i></span>
+              <div class="detail-property">
+                <strong>Venue</strong> {{event.event_details.venue}}
+              </div>
+              <div class="divider"></div>
+              <div class="detail-property">
+                <strong>Type</strong> {{event.event_details.type}}
+              </div>
+              <div class="divider"></div>
+              <div class="detail-property">
+                <strong>Attendees</strong> {{event.event_details.attendees}}
+              </div>
+              <div class="divider"></div>
+              <div class="detail-property">
+                {{event.event_details.description}}</br>
+              </div>
             </div>
           </div>
         </div>
