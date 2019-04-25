@@ -22,14 +22,20 @@ permalink: /events/
           <div class="card sticky-action medium hoverable">
             <div class="card-image">
               <img src="/assets/images/events/{{event.photo-path}}">
-              <span class="card-title">{{event.title}}</span>
+              <span class="card-title left-align">{{event.title}}</span>
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{event.dates}}<i class="material-icons right">more_vert</i></span>
-              <p>{{event.country}} - {{event.city}}</p>
+            <div class="card-content left-align">
+              <span class="card-title activator">{{event.dates}}<i class="material-icons right">more_vert</i></span>
+              <div class="detail-property">
+                <strong>Location:</strong> {{event.country}} - {{event.city}}
+              </div>
+              <div class="detail-property">
+                <strong>People:</strong> {{event.event_details.attendees}}
+              </div>                            
+              <p></p>
             </div>
             <div class="card-reveal left-align">
-              <span class="card-title grey-text text-darken-4">Details<i class="material-icons right">close</i></span>
+              <span class="card-title">Details<i class="material-icons right">close</i></span>
               <div class="detail-property">
                 <strong>Venue</strong> {{event.event_details.venue}}
               </div>
@@ -66,14 +72,20 @@ permalink: /events/
           <div class="card sticky-action medium hoverable">
             <div class="card-image">
               <img src="/assets/images/events/{{event.photo-path}}">
-              <span class="card-title">{{event.title}}</span>
+              <span class="card-title left-align">{{event.title}}</span>
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{event.dates}}<i class="material-icons right">more_vert</i></span>
-              <p>{{event.country}} - {{event.city}}</p>
+            <div class="card-content left-align">
+              <span class="card-title activator">{{event.dates}}<i class="material-icons right">more_vert</i></span>
+              <div class="detail-property">
+                <strong>Location:</strong> {{event.country}} - {{event.city}}
+              </div>
+              <div class="detail-property">
+                <strong>People:</strong> {{event.event_details.attendees}}
+              </div>                            
+              <p></p>
             </div>
             <div class="card-reveal left-align">
-              <span class="card-title grey-text text-darken-4">Details<i class="material-icons right">close</i></span>
+              <span class="card-title"><strong>Details</strong><i class="material-icons right">close</i></span>
               <div class="detail-property">
                 <strong>Venue</strong> {{event.event_details.venue}}
               </div>

@@ -1,25 +1,35 @@
 #events-page {
     .card {
         .card-image{
-            img {
-                filter: blur(0.8px) brightness(40%);
-            }
+            max-height: 70%;
+            // img {
+            //     filter: blur(0.8px) brightness(40%);
+            // }
         }
         .card-title {
-            font-size: 1.2em;
-            font-weight: normal;
+            color: $white;
+            font-size: 1.1em;
+            font-weight: lighter;
+            padding: 10px;
+
         }
+
         .detail-property {
-            margin-top: 1em;
+            font-size: 0.9;
+            font-weight: lighter;
+        }
+        .card-content {
+            max-height: 30%;
+            padding: 10px;
+            .card-title {
+                padding: 2px;
+                margin-bottom: 0;
+            }
         }
     }
     .past-events {
         .card {
             background-color: $highlight-color;
-
-            .card-title {
-                color: $highlight-color;
-            }
         }
     }
 }
