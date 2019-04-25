@@ -6,6 +6,7 @@ event_details:
   type: Forum
   attendees: 110
   meeting-url: https://elixir-europe.org/events/elixir-sme-forum-sweden
+  photo-gallery: https://elixir-europe.org/events/elixir-sme-forum-sweden
   description: "Contact for references: Katharina.Lauer@elixir-europe.org"
 dates: 5 May 2019
 start_date: 2019-05-03
