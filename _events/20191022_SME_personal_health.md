@@ -9,8 +9,8 @@ event_details:
   photo-gallery: https://elixir-europe.org/events/elixir-sme-forum-sweden
   description: "Contact for references: Katharina.Lauer@elixir-europe.org"
 dates: 5 May 2019
-start_date: 2019-05-03
-end_date: 2019-06-03
+start_date: 2019-03-03
+end_date: 2019-04-03
 country: Sweden
 city: Stockholm
 photo-path: 20190305_SME_Human.jpeg
