@@ -89,7 +89,7 @@ permalink: /events/
               <p></p>
             </div>
             <div class="card-reveal left-align">
-              <span class="card-title"><strong>Details</strong><i class="material-icons right">close</i></span>
+              <span class="card-title">Details<i class="material-icons right">close</i></span>
               <div class="detail-property">
                 <strong>Venue</strong> {{event.event_details.venue}}
               </div>
@@ -104,7 +104,13 @@ permalink: /events/
               <div class="divider"></div>
               <div class="detail-property">
                 {{event.event_details.description}}</br>
-              </div>          
+              </div>
+              <div class="card-action">
+                <a target="_blank" href="{{event.event_details.meeting-url}}">Event website</a>
+                {% if event.event_details.photo-gallery %}
+                <a target="_blank" href="{{event.event_details.photo-gallery}}">Photo gallery</a>
+                {% endif %}
+              </div>              
             </div>
           </div>
         </div>

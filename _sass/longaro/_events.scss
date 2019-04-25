@@ -28,7 +28,11 @@
         }
         .card-action {
             a {
+                color: $primary-color;
                 font-size: 0.65em;
+            }
+            a:hover {
+                color: $highlight-color;
             }
         }
     }
