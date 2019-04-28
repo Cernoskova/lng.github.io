@@ -8,12 +8,10 @@ event_details:
   meeting-url: https://elixir-europe.org/events/elixir-sme-forum-sweden
   photo-gallery: https://elixir-europe.org/events/elixir-sme-forum-sweden
   description: "Contact for references: Katharina.Lauer@elixir-europe.org"
-dates: 3 May 2019
-start_date: 2019-05-03
-end_date: 2019-06-03
+dates: 5-6 Mar 2019
+start_date: 2019-03-05
+end_date: 2019-06-06
 country: Sweden
 city: Stockholm
 photo-path: 20190503_SME_personal_health.jpg
 ---
-
-<!-- For description I would do categories: Venue,Type of event, Attendees, Photogallery, Reference contact >
