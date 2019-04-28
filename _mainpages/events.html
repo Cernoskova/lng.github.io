@@ -52,8 +52,12 @@ permalink: /events/
                 {{event.event_details.description}}</br>
               </div>
               <div class="card-action">
+                {% if event.event_details.meeting-url and event.event_details.meeting-url != "" %}
                 <a target="_blank" href="{{event.event_details.meeting-url}}">Event website</a>
+                {% endif %}
+                {% if event.event_details.photo-gallery and event.event_details.photo-gallery != "" %}
                 <a target="_blank" href="{{event.event_details.photo-gallery}}">Photo gallery</a>
+                {% endif %}
               </div>              
             </div>
           </div>
@@ -106,11 +110,13 @@ permalink: /events/
                 {{event.event_details.description}}</br>
               </div>
               <div class="card-action">
+                {% if event.event_details.meeting-url and event.event_details.meeting-url != "" %}
                 <a target="_blank" href="{{event.event_details.meeting-url}}">Event website</a>
-                {% if event.event_details.photo-gallery %}
+                {% endif %}
+                {% if event.event_details.photo-gallery and event.event_details.photo-gallery != "" %}
                 <a target="_blank" href="{{event.event_details.photo-gallery}}">Photo gallery</a>
                 {% endif %}
-              </div>              
+              </div>                
             </div>
           </div>
         </div>
