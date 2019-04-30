@@ -2,9 +2,9 @@
     .card {
         .card-image{
             max-height: 70%;
-            // img {
-            //     filter: blur(0.8px) brightness(40%);
-            // }
+            img {
+                filter: blur(0.8px) brightness(40%);
+            }
         }
         .card-title {
             color: $white;
