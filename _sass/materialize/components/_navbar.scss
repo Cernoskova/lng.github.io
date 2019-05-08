@@ -67,6 +67,10 @@ nav {
     font-size: $navbar-brand-font-size;
     padding: 0;
 
+    img {
+      width: 220px;
+    }
+
     &.center {
       left: 50%;
       transform: translateX(-50%);
@@ -75,7 +79,9 @@ nav {
     @media #{$medium-and-down} {
       left: 50%;
       transform: translateX(-50%);
-
+      img {
+        width: 100%;
+      }
       &.left, &.right {
         padding: 0;
         transform: none;

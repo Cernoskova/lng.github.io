@@ -1,8 +1,15 @@
 .page-footer {
     .brand-logo {
+        margin-top: 1.55em;
+
         img {
-            max-width: 19em;
+            max-width: 50%;
         }
+        @media #{$medium-and-down} {
+            img {
+                max-width: 80%;
+            }
+        }        
     }
     .social {
         width:50%;
