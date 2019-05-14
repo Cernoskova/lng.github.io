@@ -27,12 +27,16 @@
 
 #landing-page {
 
+  strong {
+    color: $link-color;
+  }
+
   .section-title {
     color: $scientifika-light-blue;
   }
 
   .body-text {
-    margin: 0 0 1em 0;
+    margin: 2em 0em;
     font-size: 1.15rem;
     font-weight: normal;
   }
@@ -52,19 +56,10 @@
       background-size: 115%;
       height: 34rem;
     }
-
-    .row {
-      margin: 0;
-
-      .leyend {
-        margin: 1em 0em;
-        padding: 0 3em;
-      }
+    .leyend {
+      margin: 2em 0em;
+      padding: 0 3em;
     }
-  }
-
-  .section {
-    padding: 4em 0;
   }
 
   .icon-block {
