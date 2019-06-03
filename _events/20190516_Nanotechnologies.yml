@@ -5,13 +5,13 @@ event_details:
   venue: CEITEC BUT Brno
   type: Conference
   attendees: 150
-  meeting url: http://cz-de-conference.ceitec.cz/
-  photo-gallery: LATER
+  meeting-url: http://cz-de-conference.ceitec.cz/
+  photo-gallery: http://cz-de-conference.ceitec.cz/photogallery/
   description: "Contact for references: ondrej.hradil@ceitec.cz"
 dates: 16 - 17 May 2019
 start_date: 2019-05-16
 end_date:  2019-05-17
 country: Czech Republic
 city: Brno
-photo-path: 20190516_Nanotechnologies.jpg
+photo-path: 20190516_CEITEC_Nano.jpg
 ---

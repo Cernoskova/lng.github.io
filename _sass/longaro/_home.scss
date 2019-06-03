@@ -27,6 +27,11 @@
 
 #landing-page {
 
+  .row {
+    margin: 0;
+    padding: 0;
+  }  
+
   strong {
     color: $link-color;
   }
@@ -66,23 +71,28 @@
     padding: 1em 1em;
 
     .icon {
+      margin-bottom: 0.5em;
+
       img {
-        max-height: 4em;
+        max-height: 5em;
       }
     }
   }
 
   #home-services {
+    .actions {
+      margin-bottom: 1em;
+
+      .col {
+        margin-bottom: 0.5em;
+      }
+    }
     .col.m6 > .btn {
       width: 100%;
     }
   }
 
   #home-what-we-do {
-    .row {
-      margin: 0;
-      padding: 0 5em;
-    }
     .list {
       margin: 1.5em 0;
     }
