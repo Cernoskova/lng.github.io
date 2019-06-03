@@ -19,7 +19,7 @@ permalink: /events/
         {% assign eventDate = event.start_date | date: '%F' %}
         {% if eventDate >= currentDate %}
         <div class="col s12 m6 l4">
-          <div class="card sticky-action small hoverable">
+          <div class="card sticky-action hoverable">
             <div class="card-image">
               <img src="/assets/images/events/{{event.photo-path}}">
               <span class="card-title left-align">{{event.title}}</span>
@@ -31,8 +31,7 @@ permalink: /events/
               </div>
               <div class="detail-property">
                 <strong>People:</strong> {{event.event_details.attendees}}
-              </div>                            
-              <p></p>
+              </div>
             </div>
             <div class="card-reveal left-align">
               <span class="card-title">Details<i class="material-icons right">close</i></span>
@@ -77,7 +76,7 @@ permalink: /events/
         {% assign eventDate = event.start_date | date: '%F' %}
         {% if eventDate <= currentDate %}
         <div class="col s12 m6 l4">
-          <div class="card sticky-action small hoverable">
+          <div class="card sticky-action hoverable">
             <div class="card-image">
               <img src="/assets/images/events/{{event.photo-path}}">
               <span class="card-title left-align">{{event.title}}</span>
