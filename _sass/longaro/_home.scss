@@ -27,6 +27,14 @@
 
 #landing-page {
 
+  .actions {
+    margin-bottom: 1em;
+
+    .col {
+      margin-bottom: 0.5em;
+    }
+  }
+
   .row {
     margin: 0;
     padding: 0;
@@ -80,13 +88,6 @@
   }
 
   #home-services {
-    .actions {
-      margin-bottom: 1em;
-
-      .col {
-        margin-bottom: 0.5em;
-      }
-    }
     .col.m6 > .btn {
       width: 100%;
     }
