@@ -6,7 +6,7 @@ event_details:
   type: Conference
   attendees: 300
   meeting url: 
-  photo-gallery: 
+  photo-gallery: https://www.flickr.com/photos/elixir-europe/albums/72157709243937798/with/48125216586/
   description: 
 dates: 17 - 20 June 2019
 start_date: 2019-06-17
