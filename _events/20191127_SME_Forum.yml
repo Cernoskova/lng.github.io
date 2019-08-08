@@ -1,6 +1,6 @@
 ---
 name: 20191127_SME_Forum
-Title: "ELIXIR Innovation and SME Forum: Data management in the life sciences - a driver for innovation"
+title: "ELIXIR Innovation and SME Forum: Data management in the life sciences - a driver for innovation"
 event_details: 
   venue: Villa Torreta
   type: Forum
@@ -11,6 +11,7 @@ event_details:
 dates: 27 - 28 November 2019
 start_date: 2019-11-27
 end_date:  2019-11-28
+client: ELIXIR Hub, ELIXIR IT
 country: Milan
 city: Italy
 photo-path: 20191127_SME_Forum.jpg
