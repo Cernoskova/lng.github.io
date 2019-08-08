@@ -14,8 +14,8 @@ if (elem) {
     cellAlign: 'left',
     contain: true,
     wrapAround: true,
-    autoPlay: 3700,
-    prevNextButtons: false,
+    autoPlay: 5000,
+    prevNextButtons: true,
     // adaptiveHeight: true,
   });
 }
