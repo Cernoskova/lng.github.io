@@ -46,10 +46,12 @@ permalink: /events/
               <div class="detail-property">
                 <strong>Attendees</strong> {{event.event_details.attendees}}
               </div>
+              {% if event.client and event.client != "" %}
               <div class="divider"></div>
               <div class="detail-property">
                 <strong>Client</strong> {{event.client}}
               </div>
+              {% endif %}
               <div class="divider"></div>
               <div class="detail-property">
                 {{event.event_details.description}}</br>
@@ -108,10 +110,12 @@ permalink: /events/
               <div class="detail-property">
                 <strong>Attendees</strong> {{event.event_details.attendees}}
               </div>
+              {% if event.client and event.client != "" %}
               <div class="divider"></div>
               <div class="detail-property">
                 <strong>Client</strong> {{event.client}}
-              </div>              
+              </div>
+              {% endif %}  
               <div class="divider"></div>
               <div class="detail-property">
                 {{event.event_details.description}}</br>
