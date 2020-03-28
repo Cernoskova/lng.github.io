@@ -1,0 +1,256 @@
+events:
+  - name: 20190320_EOSC_Life_kick_off
+    title: EOSC-Life Kick off meeting
+    venue: NH hotel
+    type: Meeting
+    attendees: 130
+    meeting-url:
+    photo-gallery: https://drive.google.com/drive/folders/1mLpDKBZXB-65kGFIS_mwwJGKcTvlkHQ6
+    description:
+    dates: 20 to 21 March 2019
+    start_date: 2019-03-20
+    end_date: 2019-03-21
+    client: EOSC-Life (ELIXIR)
+    country: Netherland
+    city: Amsterdam
+    photo-path: 20190320_EOSC_Life_kick_off.jpg
+  - name: 20190415_ELIXIR_board_meeting
+    title: "ELIXIR Board meeting"
+    venue: Scandic Hotel Ornen
+    type: Meeting
+    attendees: 65
+    meeting-url:
+    photo-gallery: https://elixir-europe.org/news/photos/set/72157707957598415
+    description:
+    dates: 15-16 April 2019
+    start_date: 2019-04-15
+    end_date: 2019-04-16
+    client: ELIXIR Hub
+    country: Norway
+    city: Bergen
+    photo-path: 20190415_ELIXIR_board_meeting.jpg
+  - name: 20190305_SME_personal_health
+    title: "ELIXIR Innovation and SME Forum: Genomics and Associated Data in National Healthcare Initiatives"
+    venue: ScieLife Lab
+    type: Forum
+    attendees: 110
+    meeting-url: https://elixir-europe.org/events/elixir-sme-forum-sweden
+    photo-gallery: https://elixir-europe.org/events/elixir-sme-forum-sweden
+    description:
+    dates: 5-6 Mar 2019
+    start_date: 2019-03-05
+    end_date: 2019-03-06
+    client: ELIXIR Hub, ELIXIR SWE
+    country: Sweden
+    city: Stockholm
+    photo-path: 20190305_SME_personal_health.jpg
+  - name: 20190516_Nanotechnologies
+    title: "Czech-German Scientific Conference on Nanotechnologies and Advanced Materials"
+    venue: CEITEC BUT Brno
+    type: Conference
+    attendees: 150
+    meeting-url: http://cz-de-conference.ceitec.cz/
+    photo-gallery: http://cz-de-conference.ceitec.cz/photogallery/
+    description:
+    dates: 16 - 17 May 2019
+    start_date: 2019-05-16
+    end_date: 2019-05-17
+    client: MEYS CZ, BMBF Germany, CEITEC BUT
+    country: Czech Republic
+    city: Brno
+    photo-path: 20190516_CEITEC_Nano.jpg
+  - name: 20190617_ELIXIR_All_Hands
+    title: ELIXIR EXCELERATE All Hands meeting
+    enue: Hotel Mariott Lisbon
+    type: Conference
+    attendees: 300
+    meeting url:
+    photo-gallery: https://www.flickr.com/photos/elixir-europe/albums/72157709243937798/with/48125216586/
+    description:
+    dates: 17 - 20 June 2019
+    start_date: 2019-06-17
+    end_date: 2019-06-20
+    client: ELIXIR Hub
+    country: Portugal
+    city: Lisbon
+    photo-path: 20190617_ELIXIR_All_Hands.jpg
+  - name: 20191010_SME_distributed_data
+    title: "ELIXIR Innovation and SME Forum: Distributed Data Analysis - The {Health} Data Train"
+    venue: Vila Jongerius
+    type: Forum
+    attendees: 70
+    meeting url: https://elixir-europe.org/events/elixir-innovation-and-sme-forum-distributed-data-analysis-health-data-train
+    photo-gallery: https://www.flickr.com/photos/elixir-europe/
+    description:
+    dates: 10 - 11 October 2019
+    start_date: 2019-10-10
+    end_date: 2019-10-11
+    client: ELIXIR Hub, ELIXIR NL
+    country: Utrecht
+    city: Netherland
+    photo-path: 20191010_SME_distributed_data.jpg
+  - name: 20191030_EOSC_Life_retreat
+    title: EOSC-Life Retreat
+    venue: Chicheley Hall
+    type: Meeting
+    attendees: 40
+    meeting-url:
+    photo-gallery: https://drive.google.com/drive/folders/1mLpDKBZXB-65kGFIS_mwwJGKcTvlkHQ6
+    description:
+    dates: 30 - 31 October 2019
+    start_date: 2019-10-30
+    end_date: 2019-10-31
+    client: EOSC-Life (ELIXIR)
+    country: UK
+    city: Buckinghamshire
+    photo-path: 20191030_EOSC_Life_retreat.jpg
+  - name: 20191118_ELIXIR_Biohackathon
+    title: Biohackathon EUROPE
+    venue: Chateauform Les Berges
+    type: Hackathon
+    attendees: 170
+    meeting url: https://www.biohackathon-europe.org/
+    photo-gallery:
+    description:
+    dates: 18 - 22 November
+    start_date: 2019-11-18
+    end_date: 2019-11-22
+    client: ELIXIR
+    country: France
+    city: Paris
+    photo-path: 20191118_ELIXIR_Biohackathon.jpg
+  - name: 20191127_SME_Forum
+    title: "ELIXIR Innovation and SME Forum: Data management in the life sciences - a driver for innovation"
+    venue: Villa Torreta
+    type: Forum
+    attendees: 70
+    meeting url:
+    photo-gallery:
+    description: "Contact for references: katharina.lauer@elixir-europe.org"
+    dates: 27 - 28 November 2019
+    start_date: 2019-11-27
+    end_date: 2019-11-28
+    client: ELIXIR Hub, ELIXIR IT
+    country: Milan
+    city: Italy
+    photo-path: 20191127_SME_Forum.jpg
+  - name: 20200302_Corbel_EOSClife
+    title: CORBEL Final meeting & EOSC Life AGM
+    venue: Convito della Calza
+    type: Meeting
+    attendees: 330
+    meeting url:
+    photo-gallery:
+    description:
+    dates: 02 - 04 June 2020
+    start_date: 2020-03-02
+    end_date: 2020-03-04
+    client: CORBEL, EOSC-Life (ELIXIR)
+    country: Italy
+    city: Florence
+    photo-path: 20200302_Corbel_EOSClife.jpg
+  - name: 20200324_SME_Forum
+    title: "ELIXIR Innovation and SME Forum: Data Driven Innovation in the Agritech Sector"
+    venue: Bayer SAS
+    type: Forum
+    attendees: 70
+    meeting url:
+    photo-gallery:
+    description: "Contact for references: katharina.lauer@elixir-europe.org"
+    dates: 24 - 25 March 2020
+    start_date: 2020-03-24
+    end_date: 2020-03-25
+    country: France
+    client:
+    city: Lyon
+    photo-path: 20200324_SME_Forum.jpg
+  - name: 20200608_All_Hands
+    title: ELIXIR All Hands meeting
+    venue: EYE Film museum
+    type: Meeting
+    attendees: 330
+    meeting url:
+    photo-gallery:
+    description:
+    dates: 08 - 11 June 2020
+    start_date: 2020-06-08
+    end_date: 2020-06-11
+    client: ELIXIR
+    country: Netherland
+    city: Amsterdam
+    photo-path: 20200608_All_Hands.jpg
+  - name: 2020_Infrafrontier
+    title: INFRAFRONTIER Conference
+    venue: TBA
+    type: Conference
+    attendees: 150
+    meeting url:
+    photo-gallery:
+    description:
+    dates: 21 June 2020
+    start_date: 2020-06-21
+    end_date: 2020-06-23
+    country: Brussels
+    client: INFRAFRONTIER
+    city: Brussels
+    photo-path: 20200621_Infrafrontier.jpg
+  - name: 20200910_Converge_Kick_off
+    title: ELIXIR Converge Kick off meeting
+    venue: Crowne Plaza Brussels
+    type: Forum
+    attendees: 70
+    meeting url:
+    photo-gallery:
+    description:
+    dates: 24 February 2020
+    start_date: 2020-02-24
+    end_date: 2020-02-25
+    country: Belgium
+    client:
+    city: Brussels
+    photo-path: 20200910_Converge_Kick off.jpg
+  - name: 20200910_SME_Forum
+    title: "ELIXIR Innovation and SME Forum: Data driven innovation in healthcare diagnostics"
+    venue: "Meliá Sitges"
+    type: Forum
+    attendees: 70
+    meeting url:
+    photo-gallery:
+    description: "Contact for references: katharina.lauer@elixir-europe.org"
+    dates: 10 September 2020
+    start_date: 2020-09-10
+    end_date: 2020-09-10
+    country: Spain
+    client:
+    city: Barcelona
+    photo-path: 20200910_SME_Forum.jpg
+  - name: 20201018_EMBO_workshop
+    title: Advances and Challanges in Biomolecular Simulations EMBO workshop
+    venue: Best Western Premier International
+    type: Conference
+    attendees: 150
+    meeting url:
+    photo-gallery:
+    description:
+    dates: 18 October 2020
+    start_date: 2020-10-18
+    end_date: 2020-10-22
+    country: Czech Republic
+    client: Bioexcel
+    city: Brno
+    photo-path: 20201018_Bioexcel.jpg
+  - name: 20201108_BioHackathon
+    title: BioHackathon Europe
+    venue: La Mola Campus
+    type: Conference
+    attendees: 170
+    meeting url:
+    photo-gallery:
+    description:
+    dates: 18 October 2020
+    start_date: 2020-11-08
+    end_date: 2020-11-13
+    country: Spain
+    client: ELIXIR
+    city: Barcelona
+    photo-path: 20201108_Biohackathon.jpg
