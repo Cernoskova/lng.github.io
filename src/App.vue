@@ -24,4 +24,8 @@ export default {
 @import "../_sass/materialize/components/_variables.scss";
 @import "../_sass/materialize/components/_typography.scss";
 
+// .v-application {
+//   font-family: "Simplifica", "Avenir Next LT Pro" ,"Roboto", sans-serif !important;
+//   line-height: 1.5;
+// }
 </style>

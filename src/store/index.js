@@ -11,35 +11,20 @@ export default new Vuex.Store({
     events: [],
     loading: true,
     error: {},
+    pastEvents: [],
   },
   mutations: {
-    // SET_DOCUMENT(state, payload) {
-    //   const gdoc = Papa.parse(payload);
-    //   const events = gdoc.data;
-    //   console.log(events);
-    //   const gdocEvents = [];
-    //   events.map((row) => {
-    //     gdocEvents.push({ name: row[0], description: row[1] });
-    //     return row;
-    //   });
-    //   state.events = gdocEvents;
-    // },
     SET_DOCUMENT(state, parsed) {
-      // console.log('SET DOC', parsed);
-      // const gdocEvents = [];
-      // parsed.data.map((row) => {
-      //   gdocEvents.push({ name: row[0], description: row[1] });
-      //   return row;
-      // });
-      state.events = parsed.data;
+      const allEvents = parsed.data.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+      const currentTime = new Date();
+      state.events = allEvents.filter(
+        (event) => new Date(event.startDate).getTime() >= currentTime.getTime(),
+      );
+      state.pastEvents = allEvents.filter(
+        (event) => new Date(event.startDate).getTime() < currentTime.getTime(),
+      );
     },
     SET_ERROR(state, err) {
-      // console.log('SET DOC', parsed);
-      // const gdocEvents = [];
-      // parsed.data.map((row) => {
-      //   gdocEvents.push({ name: row[0], description: row[1] });
-      //   return row;
-      // });
       state.error = err;
     },
     SET_LOADING(state, flag) {
@@ -47,28 +32,9 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    // getDoc({ commit }) {
-    //   commit('SET_LOADING', true);
-
-    //   gdocsAPI
-    //     .getGdocsAPI()
-    //     .get()
-    //     .then((res) => {
-    //       if (res.status === 200) {
-    //         console.log(res);
-    //         commit('SET_DOCUMENT', res.data);
-    //       }
-    //       commit('SET_DOCUMENT', false);
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //       commit('SET_DOCUMENT', false);
-    //     });
-    // },
     getDocWithPapa({ commit }) {
-      commit('SET_LOADING', true);
-
-      Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vQWQGbChO2Zf6Kznbrb7mHMG-rOawV1gJ1OJBDz6xmbGlQO0EZj0hQM6CGxhEDWK7mrRP1eBTP3LiEW/pub?gid=0&single=true&output=csv', {
+      Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vQWQGbChO2Zf6Kznbrb7mHMG-rOawV1gJ1OJBDz6xmbGlQO0EZj0hQM6CGxhEDWK7mrRP1eBTP3LiEW/pub?gid=1346307527&single=true&output=csv', {
+      // Papa.parse('/events.csv', {
         download: true,
         header: true,
         complete(result) {
