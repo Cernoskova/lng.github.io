@@ -2,23 +2,17 @@
 <template>
   <div id="events" class="primary">
     <v-container class="primary">
-      <v-dialog v-model="eventDialog" width="50%">
-        <v-toolbar flat>
-          <v-toolbar-title>{{ currentEvent.title }}</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" icon @click="eventDialog = false">
-            <v-icon>close</v-icon>
-          </v-btn>
-        </v-toolbar>
-        <v-card>
+      <!-- Event Detail Dialog -->
+      <v-dialog v-model="eventDialog">
+        <v-card class="accent">
           <v-img
             class="white--text align-end"
-            height="200px"
+            max-height="450px"
             :src="`${imgBasePath}${currentEvent.photoPath}`"
           >
             <v-card-title>{{ currentEvent.title }}</v-card-title>
           </v-img>
-          <v-card-subtitle class="mt-4">
+          <v-card-subtitle class="mt-4 white--text">
             <v-row>
               {{ currentEvent.type }}
               <v-spacer/>
@@ -29,26 +23,30 @@
               />
             </v-row>
           </v-card-subtitle>
-          <v-list>
+          <v-list color="accent">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-map-marker</v-icon>
+                <v-icon color="white">mdi-map-marker</v-icon>
               </v-list-item-icon>
-              <v-list-item-subtitle>
+              <v-list-item-subtitle class="white--text">
                 {{ currentEvent.country }}, {{currentEvent.city}}, {{ currentEvent.venue }}
               </v-list-item-subtitle>
             </v-list-item>
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-calendar-month</v-icon>
+                <v-icon color="white">mdi-calendar-month</v-icon>
               </v-list-item-icon>
-              <v-list-item-subtitle>{{ currentEvent.dates }}</v-list-item-subtitle>
+              <v-list-item-subtitle class="white--text">
+                {{ currentEvent.dates }}
+              </v-list-item-subtitle>
             </v-list-item>
             <v-list-item v-if="currentEvent.client">
               <v-list-item-icon>
-                <v-icon>mdi-factory</v-icon>
+                <v-icon color="white">mdi-factory</v-icon>
               </v-list-item-icon>
-              <v-list-item-subtitle>{{ currentEvent.client }}</v-list-item-subtitle>
+              <v-list-item-subtitle class="white--text">
+                {{ currentEvent.client }}
+              </v-list-item-subtitle>
             </v-list-item>
           </v-list>
           <!-- <v-card-text v-if="currentEvent.description" class="card-text">
@@ -65,9 +63,14 @@
                 Meeting Url
               </a>
             </v-btn>
+            <v-spacer />
+            <v-btn color="primary block" @click="eventDialog = false">
+             Close
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
+      <!-- END of Event Detail Dialog -->
       <h3 class="page-title secondary--text">Our Events</h3>
       <v-progress-circular
         indeterminate
@@ -82,17 +85,17 @@
               :elevation="hover ? 16 : 2"
               :class="{ 'on-hover': hover }"
               @click="displayEventDetails(event)"
-              class="event"
+              class="event accent"
             >
               <v-img
                 class="white--text align-end"
-                height="200px"
+                height="300px"
                 :src="`${imgBasePath}${event.photoPath}`"
               >
                 <v-card-title>{{ event.title }}</v-card-title>
               </v-img>
               <v-card-subtitle>
-                <v-row class="px-2">
+                <v-row class="px-2 white--text">
                   {{ event.type }} - {{ event.city }}
                   <v-spacer/>
                   <v-img
@@ -104,15 +107,17 @@
               </v-card-subtitle>
               <v-list-item>
                 <v-list-item-icon>
-                  <v-icon>mdi-calendar-month</v-icon>
+                  <v-icon color="white">mdi-calendar-month</v-icon>
                 </v-list-item-icon>
-                <v-list-item-subtitle>{{ event.dates }}</v-list-item-subtitle>
+                <v-list-item-subtitle class="white--text">{{ event.dates }}</v-list-item-subtitle>
               </v-list-item>
               <v-list-item>
-                <v-list-item-icon>
-                  <v-icon>mdi-account-group</v-icon>
+                <v-list-item-icon >
+                  <v-icon color="white">mdi-account-group</v-icon>
                 </v-list-item-icon>
-                <v-list-item-subtitle>{{ event.attendees }}</v-list-item-subtitle>
+                <v-list-item-subtitle class="white--text">
+                  {{ event.attendees }}
+                </v-list-item-subtitle>
               </v-list-item>
             </v-card>
           </v-hover>
@@ -127,17 +132,17 @@
               :elevation="hover ? 16 : 2"
               :class="{ 'on-hover': hover }"
               @click="displayEventDetails(event)"
-              class="event"
+              class="event accent"
             >
               <v-img
                 class="white--text align-end"
-                height="200px"
+                height="300px"
                 :src="`${imgBasePath}${event.photoPath}`"
               >
                 <v-card-title>{{ event.title }}</v-card-title>
               </v-img>
               <v-card-subtitle>
-                <v-row class="px-2">
+                <v-row class="px-2 white--text">
                   {{ event.type }} - {{ event.city }}
                   <v-spacer/>
                   <v-img
@@ -149,15 +154,17 @@
               </v-card-subtitle>
               <v-list-item>
                 <v-list-item-icon>
-                  <v-icon>mdi-calendar-month</v-icon>
+                  <v-icon color="white">mdi-calendar-month</v-icon>
                 </v-list-item-icon>
-                <v-list-item-subtitle>{{ event.dates }}</v-list-item-subtitle>
+                <v-list-item-subtitle class="white--text">{{ event.dates }}</v-list-item-subtitle>
               </v-list-item>
               <v-list-item>
-                <v-list-item-icon>
-                  <v-icon>mdi-account-group</v-icon>
+                <v-list-item-icon >
+                  <v-icon color="white">mdi-account-group</v-icon>
                 </v-list-item-icon>
-                <v-list-item-subtitle>{{ event.attendees }}</v-list-item-subtitle>
+                <v-list-item-subtitle class="white--text">
+                  {{ event.attendees }}
+                </v-list-item-subtitle>
               </v-list-item>
             </v-card>
           </v-hover>

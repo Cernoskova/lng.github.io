@@ -15,14 +15,14 @@ export default new Vuex.Store({
   },
   mutations: {
     SET_DOCUMENT(state, parsed) {
-      const allEvents = parsed.data.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+      const allEvents = parsed.data;
       const currentTime = new Date();
       state.events = allEvents.filter(
         (event) => new Date(event.startDate).getTime() >= currentTime.getTime(),
-      );
+      ).sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
       state.pastEvents = allEvents.filter(
         (event) => new Date(event.startDate).getTime() < currentTime.getTime(),
-      );
+      ).sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
     },
     SET_ERROR(state, err) {
       state.error = err;
