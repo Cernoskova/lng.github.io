@@ -10,7 +10,7 @@
             max-height="450px"
             :src="`${imgBasePath}${currentEvent.photoPath}`"
           >
-            <v-card-title>{{ currentEvent.title }}</v-card-title>
+            <v-card-title class="break">{{ currentEvent.title }}</v-card-title>
           </v-img>
           <v-card-subtitle class="mt-4 white--text">
             <v-row>
@@ -92,7 +92,7 @@
                 height="300px"
                 :src="`${imgBasePath}${event.photoPath}`"
               >
-                <v-card-title>{{ event.title }}</v-card-title>
+                <v-card-title class="break">{{ event.title }}</v-card-title>
               </v-img>
               <v-card-subtitle>
                 <v-row class="px-2 white--text">
@@ -132,14 +132,14 @@
               :elevation="hover ? 16 : 2"
               :class="{ 'on-hover': hover }"
               @click="displayEventDetails(event)"
-              class="event accent"
+              class="event secondary"
             >
               <v-img
                 class="white--text align-end"
                 height="300px"
                 :src="`${imgBasePath}${event.photoPath}`"
               >
-                <v-card-title>{{ event.title }}</v-card-title>
+                <v-card-title class="break">{{ event.title }}</v-card-title>
               </v-img>
               <v-card-subtitle>
                 <v-row class="px-2 white--text">
@@ -223,7 +223,7 @@ h1.page-title {
   text-align: center;
 }
 .break {
-  word-break: break-all;
+  word-break: break-word;
 }
 .event {
   transition: opacity .4s ease-in-out;
