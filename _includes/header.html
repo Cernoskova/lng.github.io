@@ -1,24 +1,35 @@
 <div class="navbar-fixed">
     <nav role="navigation" class="z-depth-3">
-        <div class="nav-wrapper container">
+        <div class="nav-wrapper main-menu">
             <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">
                 <img src="{{ site.baseurl }}/assets/images/logos/logo_web.png" alt="brand-logo">
             </a>
         {% assign default_paths = site.mainpages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
               <ul class="right hide-on-med-and-down">
-                <li><a href="{{ "/" | relative_url }}">Home </a></li>
+                <!-- <li><a href="{{ "/" | relative_url }}"><i class="material-icons">home</i></a></li> -->
                 <li><a href="/services">Event management</a></li>
                 <li><a href="/addservices">Additional services</a></li>
                 <li><a href="/v/#/events">Our work</a></li>
-                <li><a href="/aboutus">About</a></li>                
+                <li><a href="/references">Clients</a></li>
+                <li><a href="/aboutus">About</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <!-- <li>
+                  <a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a>
+                  <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                  </ul>                      
+                </li> -->
               </ul>
               <ul id="nav-mobile" class="side-nav">
                 <li><a href="{{ "/" | relative_url }}">Home </a></li>
-                <li><a href="/services">Event management</a></li>
-                <li><a href="/addservices">Additional services</a></li>
+                <li><a href="/services">Events</a></li>
+                <li><a href="/addservices">Services</a></li>
                 <li><a href="/v/#/events">Our work</a></li>
+                <li><a href="/references">Clients</a></li>
                 <li><a href="/aboutus">About</a></li>                
                 <li><a href="/contact">Contact</a></li>
               </ul>

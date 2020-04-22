@@ -5,6 +5,7 @@ import "materialize-css";
   $(function(){
     $('.button-collapse').sideNav();
     $('#slider-home').slider({height: (window.innerHeight - 160) });
+    $('.dropdown-trigger').dropdown({ hover: false }); 
   }); // end of document ready
 })($); // end of jQuery name space
 
