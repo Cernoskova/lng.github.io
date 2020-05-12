@@ -6,7 +6,7 @@
 <body>
   <div class="navbar-fixed">
     <nav role="navigation" class="z-depth-3">
-      <div class="nav-wrapper container">
+      <div class="nav-wrapper main-menu">
         <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">
           <img src="{{ site.baseurl }}/assets/images/logos/logo_web.png" alt="brand-logo">
         </a>
@@ -14,29 +14,21 @@
         {% assign page_paths = site.header_pages | default: default_paths %}
 
         <ul class="right hide-on-med-and-down grey-text text-darken-3">
-          <li><a href="{{ "/" | relative_url }}">Home</a></li>
-          <li><a href="#home-services">Event management</a></li>
-          <li><a href="#home-what-we-do">Additional services</a></li>
-          <li><a href="/events">Our work</a></li>          
-          <li><a href="#home-about-us">About</a></li>
-          <li><a href="#contact-section">Contact</a></li>
+          <!-- <li><a href="{{ "/" | relative_url }}">Home</a></li> -->
+          <li><a href="/services">Event management</a></li>
+          <li><a href="/addservices">Additional services</a></li>
+          <li><a href="/v/#/events">Our work</a></li>
+          <li><a href="/references">Clients</a></li>
+          <li><a href="/aboutus">About</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <!-- <li><a href="/">Home</a></li>
-          {% if page_paths %}
-          {% for path in page_paths %}
-          {% assign my_page = site.mainpages | where: "path", path | first %}
-          {% if my_page.title %}
-          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-          {% endif %}
-          {% endfor %}
-          {% endif %}
-          <li><a href="/contact/">Contact Us</a></li> -->
           <li><a href="{{ "/" | relative_url }}">Home </a></li>
           <li><a href="/services">Event management</a></li>
           <li><a href="/addservices">Additional services</a></li>
-          <li><a href="/events">Our work</a></li>          
+          <li><a href="/v/#/events">Our work</a></li>
+          <li><a href="/references">References</a></li>
           <li><a href="/aboutus">About</a></li>
           <li><a href="/contact">Contact</a></li>     
         </ul>
