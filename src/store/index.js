@@ -33,7 +33,7 @@ export default new Vuex.Store({
   },
   actions: {
     getDocWithPapa({ commit }) {
-      Papa.parse('https://docs.google.com/spreadsheets/d/e/2PACX-1vQWQGbChO2Zf6Kznbrb7mHMG-rOawV1gJ1OJBDz6xmbGlQO0EZj0hQM6CGxhEDWK7mrRP1eBTP3LiEW/pub?gid=1346307527&single=true&output=csv', {
+      Papa.parse('https://cors-anywhere.herokuapp.com/https://docs.google.com/spreadsheets/d/e/2PACX-1vQWQGbChO2Zf6Kznbrb7mHMG-rOawV1gJ1OJBDz6xmbGlQO0EZj0hQM6CGxhEDWK7mrRP1eBTP3LiEW/pub?gid=1346307527&single=true&output=csv', {
       // Papa.parse('/events.csv', {
         download: true,
         header: true,
